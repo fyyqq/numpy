@@ -1,0 +1,30 @@
+arange(1, 6) = Create Array
+
+ndin(x) = Check Dimension Length
+ndmin=5 = Create Dimension Array
+
+dtype(x) = Check Data Type
+dtype=int = Create item in array to int
+
+copy(x) = Copy Array
+view(x) = Get Array
+
+shape(x, x) = Check (Array length with item, Item length in each array)
+reshape(x, x) = Change Item to Array Dimension ([[x, x], [x, x]])
+reshape(-1) = Dimension Array to Normal Array
+
+numpy.nditer(x) = Loop Dimension Array Through Normal Array
+numpy.nditer(x, flags=['buffered'], op_dtypes=float) = Looping with change data type
+numpy.nditer(x, [:]) = looping with slicing
+numpy.ndenumerate(x) = looping with enumerate
+
+numpy.concatenate((x, x)) = concate single array
+numpy.concatenate((x, x), axis=2) = concate 2D array
+numpy.concatenate((x, x), axis=3) = concate 3D array
+numpy.hstack(x, x) = concate any Dimension
+numpy.vstack(x, x) = concate to 2D Array
+numpy.dstack(x, x) = concate to 3D Array
+
+numpy.where(x == x) = find every single item on index in array
+numpy.searchsorted(x, x) = find item on index
+numpy.searchsorted(x, x, side='right') = find item on index start with right
