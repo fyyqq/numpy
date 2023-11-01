@@ -28,3 +28,11 @@ numpy.dstack(x, x) = concate to 3D Array
 numpy.where(x == x) = find every single item on index in array
 numpy.searchsorted(x, x) = find item on index
 numpy.searchsorted(x, x, side='right') = find item on index start with right
+numpy.argmin(x) = find min number on index (any dimension)
+numpy.argmax(x) = find max number on index (any dimension)
+numpy.nonzero(x) = remove zero on array
+numpy.extract(x > 5, x) = filter array
+
+numpy.sort(x) = sort list number | string
+
+list[True, False, True] = show item on true

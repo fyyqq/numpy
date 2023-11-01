@@ -87,11 +87,16 @@ fourDArray = numpy.array([[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]]])
 # print(numpy.where(singleArray1 == 4)) # find every single item on index
 # print(numpy.searchsorted(singleArray1, 2)) # find item on index
 # print(numpy.searchsorted(numpy.array([1, 2, 3, 4, 5, 6]), 5, side='right')) # find item on index start with right
+# print(numpy.argmin(singleArray1)) # find min number on index (any dimension)
+# print(numpy.argmax(singleArray1)) # find max number on index (any dimension)
+# print(numpy.nonzero([0, 5, 1, 2, 0, 4, 0])) # remove '0'
+# print(numpy.extract(singleArray1 > 5, singleArray1)) # filter array (any dimension)
 
+# SORTED
+# print(numpy.sort([5, 4, 3, 2, 1])) # sort list number
+# print(numpy.sort(['d', 'c', 'a', 'b'])) # sort list string
+# print(numpy.sort([[5, 7, 2], [1, 3, 0]])) # sort in each list
 
-
-
-
-
-
+# FILTER
+# print(singleArray1[[False, True, False, True, False, True, False, True, False, True]]) # show item on true
 
