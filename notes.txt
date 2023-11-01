@@ -36,3 +36,21 @@ numpy.extract(x > 5, x) = filter array
 numpy.sort(x) = sort list number | string
 
 list[True, False, True] = show item on true
+
+random.randint(x) = random int 0 to x
+random.randint(x, size=4) = 4 random int 0 to x
+random.randint(x, size=(2, 4)) = 4 random int 0 to x in 2 list
+
+random.rand() = random float
+random.rand(4) = 4 random float
+random.rand((2, 5)) = 5 random float in 2 list
+
+random.choice([x]) = take 1 random int in list
+random.choice([x], size=4) = take 4 random int in list
+random.choice([x], size=(2, 4)) = take 4 random int in 2 list
+random.choice([x, x], p=[f, f], size=(3)) = random 3 int 
+random.choice([x, x], p=[f, f], size=(2, 3)) = random 3 int 2 list
+
+random.shuffle([x]) = shuffle all item in list
+random.permutation([x]) = shuffle all item in list
+

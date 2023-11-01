@@ -1,4 +1,7 @@
 import numpy
+from numpy import random
+
+# ----- BASIC ----- #
 
 # CREATE ARRAY
 array = numpy.array(55)
@@ -100,3 +103,27 @@ fourDArray = numpy.array([[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]]])
 # FILTER
 # print(singleArray1[[False, True, False, True, False, True, False, True, False, True]]) # show item on true
 
+
+# ----- RANDOM ----- #
+
+# lists = numpy.arange(5)
+
+# print(random.randint(5)) # random number 0 to 5
+# print(random.randint(10, size=5)) # 5 random number 0 to 10
+# print(random.randint(10, size=(2, 5))) # 5 random number in 2 list
+
+# print(random.rand()) # random float 
+# print(random.rand(5)) # 5 random float 
+# print(random.rand(2, 5)) # 5 random float in 2 list
+
+# print(random.choice(lists)) # 1 random number in list
+# print(random.choice(lists, size=3)) # 3 random number in list
+# print(random.choice(lists, size=(2, 4))) # 4 random in 2 list
+
+# print(random.choice([2, 4, 6, 8], p=[0.1, 0.3, 0.6, 0.0], size=(10))) # 10 random int in list
+# print(random.choice(['a', 'd', 'b', 'c'], p=[0.1, 0.3, 0.6, 0.0], size=(10))) # 10 random str in list
+# print(random.choice([2, 4], p=[0.5, 0.5], size=(2))) # probabilty must sum result 1
+# print(random.choice([1, 3, 5], p=[0.35, 0.35, 0.3], size=(2, 3))) # 3 random int int 2 list
+
+# random.shuffle(lists) # shuffle random all int in list
+# print(random.permutation(lists)) # shuffle too  
