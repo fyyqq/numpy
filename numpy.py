@@ -127,3 +127,46 @@ fourDArray = numpy.array([[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]]])
 
 # random.shuffle(lists) # shuffle random all int in list
 # print(random.permutation(lists)) # shuffle too  
+
+
+# ----- UFUNC ----- #
+
+# x = [1, 2, 3, 4]
+# y = [5, 6, 7, 8]
+# z = [2, 4, 6, 8]
+
+# result = [i + j for i, j in zip(x, y)] # looping more than 1 list
+# print(numpy.add(x, y)) # sum 2 list | int
+
+# print(numpy.subtract(y, x)) # minus list | int
+
+# print(numpy.multiply(x, y)) # multiply list | int
+
+# print(numpy.divide(2, 2)) # divide list | int
+
+# print(numpy.power(2, 3)) # 2 ** 3 list | int
+
+# print(numpy.mod(2, 5)) # modulo % list | int 
+# print(numpy.remainder(2, 5)) # modulo % list | int 
+
+# print(numpy.divmod([2, 4, 6, 8], [2, 2, 2, 2])) # divide each item on index
+
+# print(numpy.absolute([-1, -2, -3, -4])) # remove - in list
+
+# myFunc = lambda a, b: numpy.add(a, b)
+# result = numpy.frompyfunc(myFunc, 2, 1) # create own function
+# print(result(x, y))
+
+# print(type(numpy.add)) # check type function
+
+# print(numpy.trunc([-2.5550, 3.211])) # remove dot in item | float
+# print(numpy.fix(-1.0001)) # remove dot in item | float
+
+# print(numpy.around(2.6)) # round list | float
+# print(numpy.floor([2.5, 1.2])) # floor list | float
+# print(numpy.ceil([2.1, 3.5])) # ceil list | float
+
+# print(numpy.log(x))
+# print(numpy.log2(x))
+# print(numpy.log10(x))
+

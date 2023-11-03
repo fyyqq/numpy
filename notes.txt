@@ -37,6 +37,9 @@ numpy.sort(x) = sort list number | string
 
 list[True, False, True] = show item on true
 
+
+
+
 random.randint(x) = random int 0 to x
 random.randint(x, size=4) = 4 random int 0 to x
 random.randint(x, size=(2, 4)) = 4 random int 0 to x in 2 list
@@ -53,4 +56,26 @@ random.choice([x, x], p=[f, f], size=(2, 3)) = random 3 int 2 list
 
 random.shuffle([x]) = shuffle all item in list
 random.permutation([x]) = shuffle all item in list
+
+
+
+zip(x, y) = looping 2 list
+numpy.add(x, y) = sum 2 list | int
+numpy.subtract(x, y) = minus 2 list | int
+numpy.multiply(x, y) = multiply 2 list | int
+numpy.divide(x, y) = divide 2 list | int
+numpy.power(x, y) = x ** y 2 list | int
+numpy.mod(x, y) = x % y 2 list | int
+numpy.remainder(x, y) = x % y 2 list | int
+numpy.divmod(x, y) = divide each item in list
+
+numpy.absolute(x) = remove negative 
+frompyfunc(func, parameter, result) = create own function
+
+numpy.trunc(-x) = remove float dot in list | int
+numpy.fix(-x) = remove float dot in list | int
+
+numpy.around(x.x) = round list | int
+numpy.floor(x.x) = floor list | int
+numpy.ceil(x.x) = ceil list | int
 
