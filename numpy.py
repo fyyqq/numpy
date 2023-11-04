@@ -136,18 +136,18 @@ fourDArray = numpy.array([[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]]])
 # z = [2, 4, 6, 8]
 
 # result = [i + j for i, j in zip(x, y)] # looping more than 1 list
-# print(numpy.add(x, y)) # sum 2 list | int
+# print(numpy.add(x, y)) # sum 2 each list | int
 
-# print(numpy.subtract(y, x)) # minus list | int
+# print(numpy.subtract(y, x)) # minus each list | int
 
-# print(numpy.multiply(x, y)) # multiply list | int
+# print(numpy.multiply(x, y)) # multiply each list | int
 
-# print(numpy.divide(2, 2)) # divide list | int
+# print(numpy.divide(2, 2)) # divide each list | int
 
-# print(numpy.power(2, 3)) # 2 ** 3 list | int
+# print(numpy.power(2, 3)) # 2 ** 3 each list | int
 
-# print(numpy.mod(2, 5)) # modulo % list | int 
-# print(numpy.remainder(2, 5)) # modulo % list | int 
+# print(numpy.mod(2, 5)) # modulo % each list | int 
+# print(numpy.remainder(2, 5)) # modulo % each list | int 
 
 # print(numpy.divmod([2, 4, 6, 8], [2, 2, 2, 2])) # divide each item on index
 
@@ -170,3 +170,23 @@ fourDArray = numpy.array([[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]]])
 # print(numpy.log2(x))
 # print(numpy.log10(x))
 
+# print(numpy.sum([[1, 2, 3], [4, 5, 6]], axis=0)) # sum column
+# print(numpy.sum([[1, 2, 3], [4, 5, 6]], axis=1)) # sum row
+
+# print(numpy.cumsum([1, 2, 3])) # sum from left to right 1 | 1+2=3 | 3+3=6
+
+# print(numpy.prod([2, 2, 3])) # 2*2*3 = 12
+# print(numpy.prod([[1, 2], [3, 4]])) # 1*2*3*4 = 24
+# print(numpy.prod([[1, 2], [3, 4]], axis=0)) # 1*3 & 2*4 = [3, 8]
+# print(numpy.cumprod([1, 2, 3])) # 1 | 1*2=2 | 2*3=6
+
+# print(numpy.diff([2, 4, 6, 8])) # 2-4=2 | 4-6=2 | 6-8=2 = [2, 2, 2]
+# print(numpy.diff([[1, 2, 3], [4, 5, 6]], axis=1)) # 1-2=1 | 2-3=1 | 4-5=1 | 5-6=1 = [[1, 1, 1, 1]]
+
+# print(numpy.lcm(3, 4)) # 3*4 = 12 | 4*3 = 12 = 12
+# print(numpy.lcm(5, 7)) # 5*7 = 35 | 7*5 = 35 = 35
+# print(numpy.lcm.reduce([2, 4, 6])) # 2*6 = 12 | 4*3 = 12 | 6*2 = 12
+
+# print(numpy.gcd(4, 8)) # 4/1 = 4 | 8\2 = 4
+# print(numpy.gcd(4, 6)) # 4/2 = 2 | 6/3 = 2
+# print(numpy.gcd.reduce([2, 4, 6])) # 2/1 = 2 | 4/2 = 2 | 6/3 = 2

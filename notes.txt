@@ -1,5 +1,9 @@
 arange(1, 6) = Create Array
 
+axis=0 = Column
+axis=1 = Row
+axis=None = Nothing
+
 ndin(x) = Check Dimension Length
 ndmin=5 = Create Dimension Array
 
@@ -79,3 +83,21 @@ numpy.around(x.x) = round list | int
 numpy.floor(x.x) = floor list | int
 numpy.ceil(x.x) = ceil list | int
 
+numpy.sum([x, x]) = sum all item
+numpy.sum([[x, x], [x, x]], axis=0) = sum column
+numpy.sum([[x, x], [x, x]], axis=1) = sum row
+numpy.cumsum([x, x, x]) = sum from left to right
+
+numpy.diff([x, x, x]) = minus from left to right
+numpy.diff([[x, x], [x, x]], axis=0) = minus column
+
+numpy.prod([x, x, x]) = multiply all item
+numpy.prod([[x, x], [x, x]], axis=0) = multiply column
+numpy.prod([[x, x], [x, x]], axis=1) = multiply row
+numpy.cumprod([x, x, x]) = multiply from left to right
+
+numpy.lcm(x, x) = calculate lowest multiply result
+numpy.lcm.reduce([x, x, x]) = calculate lowest multiply result
+
+numpy.gcd(x, x) = calculate lowest divide result
+numpy.gcd.reduce([x, x, x]) = calculate lowest divide result
