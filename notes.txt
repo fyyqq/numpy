@@ -101,3 +101,9 @@ numpy.lcm.reduce([x, x, x]) = calculate lowest multiply result
 
 numpy.gcd(x, x) = calculate lowest divide result
 numpy.gcd.reduce([x, x, x]) = calculate lowest divide result
+
+numpy.unique([x, x, x, x]) = remove duplicated item int | string
+numpy.union1d([x, x], [x, x]) = remove duplicated item on 2 list
+numpy.intersect1d([x, x], [x, x], assume_unique=True) = find duplicated item
+numpy.setdiff1d([x, x], [x, x], assume_unique=True)
+numpy.setxor1d([x, x], [x, x], assume_unique=True) = find item that not duplicated

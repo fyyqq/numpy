@@ -190,3 +190,14 @@ fourDArray = numpy.array([[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]]])
 # print(numpy.gcd(4, 8)) # 4/1 = 4 | 8\2 = 4
 # print(numpy.gcd(4, 6)) # 4/2 = 2 | 6/3 = 2
 # print(numpy.gcd.reduce([2, 4, 6])) # 2/1 = 2 | 4/2 = 2 | 6/3 = 2
+
+# print(numpy.unique([1, 2, 2, 2, 1, 3, 4, 4])) # [1, 2, 3, 4]
+# print(numpy.unique(['a', 'a', 'b', 'c', 'c'])) # [a, b, c]
+
+# print(numpy.union1d([1, 2, 2], [3, 4, 4])) # [1, 2, 3, 4]
+
+# print(numpy.intersect1d([1, 2, 2], [3, 4, 4], assume_unique=True)) # [2, 4]
+
+# print(numpy.setdiff1d([1, 2, 3], [2, 3, 5], assume_unique=True)) # [1]
+
+# print(numpy.setxor1d([1, 2, 3], [3, 5, 6], assume_unique=True)) # [1, 2, 5, 6]
